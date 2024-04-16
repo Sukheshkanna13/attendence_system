@@ -1,0 +1,122 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 36px;
+    color: #333;
+}
+
+.attendance-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.attendance-form label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.attendance-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.mark-button, .reset-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.mark-button {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+.mark-button:hover {
+    background-color: #45a049;
+}
+
+.reset-button {
+    background-color: #f44336;
+    color: #fff;
+}
+
+.reset-button:hover {
+    background-color: #d32f2f;
+}
+
+.attendance-summary {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.attendance-summary p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.attendance-summary span {
+    font-weight: bold;
+}
+
+.attendance-details {
+    margin-top: 20px;
+}
+
+.attendance-details h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#attendanceTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#attendanceTable th, #attendanceTable td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+#attendanceTable th {
+    background-color: #f2f2f2;
+    text-align: left;
+    font-weight: normal;
+    font-size: 16px;
+    color: #333;
+}
+
+#attendanceTable td {
+    font-size: 16px;
+    color: #555;
+}
+
+#attendanceTable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}

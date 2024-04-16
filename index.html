@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Attendance System</h1>
+        <div class="attendance-form">
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName">
+            <button class="mark-button" onclick="markAttendance('present')">Mark Present</button>
+            <button class="mark-button" onclick="markAttendance('absent')">Mark Absent</button>
+            <button class="reset-button" onclick="resetAttendance()">Reset</button>
+        </div>
+        <div class="attendance-summary">
+            <p>Total Students: <span id="totalStudents">0</span></p>
+            <p>Present: <span id="presentStudents">0</span></p>
+            <p>Absent: <span id="absentStudents">0</span></p>
+            <p>Attendance Percentage: <span id="attendancePercentage">0%</span></p>
+        </div>
+        <div class="attendance-details">
+            <h2>Attendance Details</h2>
+            <table id="attendanceTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="attendanceTableBody"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
